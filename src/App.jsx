@@ -12,6 +12,7 @@ import Index from './pages/Index';
 import PublicLayout from './layouts/PublicLayout';
 import PrivateLayout from './layouts/PrivateLayout';
 import AuthLayout from './layouts/AuthLayout';
+import Vehiculos from './pages/Vehiculos';
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
       {
         path: "/admin",
         element: <Dashboard></Dashboard>,
+      },{
+        path: "/admin/vehiculos",
+        element: <Vehiculos></Vehiculos>,
+      },{
       }
     ],
   },
@@ -31,7 +36,7 @@ const router = createBrowserRouter([
         element: <Registro></Registro>
       },
       {
-        path: "/autenticacion",
+        path: "/login",
         element: <Login></Login>
       }
     ]
